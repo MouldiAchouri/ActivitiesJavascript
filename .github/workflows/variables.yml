@@ -1,3 +1,6 @@
+name: prenom
+on: push
+
 jobs:
   mon-job:
     runs-on: ubuntu-latest
