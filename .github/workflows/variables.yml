@@ -1,0 +1,8 @@
+jobs:
+  mon-job:
+    runs-on: ubuntu-latest
+    env:
+      PRENOM: "Mouldi"
+    steps:
+      - name: Salutation personalisée
+        run: echo "Bonjour $PRENOM, bienvenue dans le module ICT324"
