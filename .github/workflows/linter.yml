@@ -16,5 +16,3 @@ jobs:
         VALIDATE_ALL_CODEBASE: false
         # On active UNIQUEMENT le JavaScript
         VALIDATE_JAVASCRIPT_ES: true
-        # Nécessaire pour que l'action puisse écrire des commentaires
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
