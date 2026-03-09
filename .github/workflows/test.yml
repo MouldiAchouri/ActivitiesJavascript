@@ -2,10 +2,11 @@ name: test
 on: push
 
 jobs:
-  steps:
-    - name: Etape 1
-      run: echo "Test OK"
+  mon-job:
+    steps:
+      - name: Etape 1
+        run: echo "Test OK"
 
-    - name: Etape 2
-      if: github.ref == 'refs/heads/master'
-      run: echo "Déploiement en cours..."
+      - name: Etape 2
+        if: github.ref == 'refs/heads/master'
+        run: echo "Déploiement en cours..."
