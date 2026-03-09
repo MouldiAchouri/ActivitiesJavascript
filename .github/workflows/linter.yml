@@ -1,0 +1,20 @@
+name: linter_test
+on:
+  push:
+  pull_request:
+jobs:
+  verifications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Super-Linter
+        uses: super-linter/super-linter@v5
+        env:
+        # On demande de ne pas tout scanner par défaut
+        VALIDATE_ALL_CODEBASE: false
+        # On active UNIQUEMENT le JavaScript
+        VALIDATE_JAVASCRIPT_ES: true
+        # Nécessaire pour que l'action puisse écrire des commentaires
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
