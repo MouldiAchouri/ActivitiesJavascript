@@ -3,6 +3,7 @@ on: push
 
 jobs:
   mon-job:
+    runs-on: ubuntu-latest
     steps:
       - name: Etape 1
         run: echo "Test OK"
