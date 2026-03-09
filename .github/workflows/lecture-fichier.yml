@@ -13,4 +13,4 @@ jobs:
         run: ls -la
 
       - name: Lire le message
-        run: message.txt
+        run: cat message.txt
